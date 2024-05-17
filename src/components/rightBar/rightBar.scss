@@ -1,0 +1,97 @@
+@import "src/Pages/Style.scss";
+.rightBar{
+    @include themify($themes){
+    flex: 2;
+    position:sticky;
+    top: 70px;
+    height: calc(100vh - 70px);
+    overflow: scroll;
+    background-color: themed("bgsoft");
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    .container{
+        padding: 20px;
+        hr{
+            margin: 20px 0px;
+            border: none;
+            height: 0.5px;
+            background-color: themed("bg");
+        }
+       .menu{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        span{
+          font-weight: 500;
+          color:themed("textColor");
+        }
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            span{
+                font-size: 10px;
+                color:themed("textColor");
+                }
+            
+            
+
+            .userInfo{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                position: relative;
+                
+                img{
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .online{
+                   width: 12px; 
+                   height: 12px;
+                   border-radius: 50%;
+                   background-color: limegreen;
+                   position: absolute;
+                   top: 0;
+                   left: 30px;
+                }
+                p{
+                   font-size: 10px;
+                   color: themed("textColorSoft"); 
+                }
+                span{
+                    font-size: 10px;
+                    color:themed("textColor");
+                }
+            } 
+            .buttons{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                
+                button{
+                    border: none;
+                    padding: 5px;
+                    color: white;
+                    cursor: pointer;
+            
+                    &:first-child{
+                        background-color: #5271ff;
+                    }
+                    &:last-child{
+                        background-color: red;
+                    }
+                }
+            }  
+        }
+    }
+        
+ }
+}
+}
