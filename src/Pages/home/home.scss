@@ -1,4 +1,4 @@
-@import "src/Pages/Style.scss";
+@import "../Style.scss";
 
 .home{
     @include themify($themes){

@@ -14,17 +14,16 @@ import RightBar from './components/rightBar/RightBar';
 import Home from './Pages/home/Home';
 import Profile from './Pages/profile/Profile';
 import { useContext } from "react";
-import { DarkModeContext } from "./contex/darkModecontext";
+import { DarkModeContext } from "./contex/darkModeContext";
 
 function App() {
   const currentUser = true;
 
-  const{darkMode} = useContext(DarkModeContext)
-  console.log(darkMode);
+
 
   const Layout = ()=>{
     return(
-      <div className={`theme-${darkMode ?"dark":"light"}`}>
+      <div className="theme-dark">
       <div>
         <Navbar/>
         <div style={{display:"flex"}}>
