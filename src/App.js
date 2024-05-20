@@ -14,8 +14,10 @@ import RightBar from './components/rightBar/RightBar';
 import Home from './Pages/home/Home';
 import Profile from './Pages/profile/Profile';
 import { useContext } from "react";
-import { DarkModeContext } from "./contex/darkModeContext";
+import { DarkModeContext } from './context/darkModeContext.jsx';
 import { AuthContext } from "./context/authContext";
+import React from "react";
+
 
 function App() {
   const {currentUser} = useContext(AuthContext);
