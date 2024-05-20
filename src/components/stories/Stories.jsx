@@ -24,7 +24,14 @@ const Stories = () => {
         },
     ];
   return (
-    <div className="stories">Stories</div>
+    <div className="stories">
+        {stories.map(story=>{
+            <div className="story">
+                <img src={story.img} alt="" />
+                <span>{story.name}</span>
+            </div>
+        })}
+    </div>
   )
 }
 
