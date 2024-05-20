@@ -20,6 +20,24 @@
             position: absolute;
             bottom: 10px;
             left: 10px;
+            color: white;
+            font-weight: 500;
+        }
+        button{
+            position: absolute;
+            bottom: 40px;
+            left: 10px;
+            color: white;
+            background-color: blue;
+            border:none;
+            border-radius: 10%;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }
