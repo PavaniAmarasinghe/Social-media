@@ -12,7 +12,7 @@ export const DarkModeContextProvider = ({Children}) => {
     }
     useEffect(()=>{
         localStorage.setItem("darkMode",darkMode)
-    }, [darkMode])
+    }, [darkMode]);
 
     return(
         <DarkModeContext.Provider value ={{darkMode,toggle}}>

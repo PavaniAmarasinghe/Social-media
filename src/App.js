@@ -15,13 +15,14 @@ import Home from './Pages/home/Home';
 import Profile from './Pages/profile/Profile';
 import { useContext } from "react";
 import { DarkModeContext } from "./contex/darkModeContext";
+import { AuthContext } from "./context/authContext";
 
 function App() {
-  const currentUser = true;
+  const {currentUser} = useContext(AuthContext);
 
   const{darkMode} = useContext(DarkModeContext)
   console.log(darkMode)
-  
+
   const Layout = ()=>{
     return(
       <div className={'theme-${darkMode ? "dark" :"light"}'}>
