@@ -4,7 +4,7 @@ $themes:(
         bg:white,
         logo:darkblue,
         bgsoft:#f6f3f3,
-        textColorsoft:#555,
+        textColorSoft:#555,
         border:lightgray,    
     ),
     dark:(
@@ -38,4 +38,10 @@ $themes:(
 }
  @function themed ($key){
     @return map-get($theme-map,$key);
+ }
+
+ @mixin mobile{
+    @media(max-width:480px){
+        @content;
+    }
  }
