@@ -1,0 +1,31 @@
+@import "src/Pages/Style.scss";
+
+.comments{
+    @include themify ($themes){
+        img{
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .comment{
+            margin: 30px 0px;
+            display: flex;
+            justify-content: space-between;
+
+            .info{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                align-items: flex-start;
+
+                span{
+                    font-weight: 500;
+                }
+                p{
+                  color:themed("textColorSoft")  
+                }
+            }
+        }
+    }
+}
